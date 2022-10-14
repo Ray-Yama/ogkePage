@@ -70,6 +70,10 @@ body{
   }
 }
 
+.btnarea{
+    text-align: center;
+}
+
 button{
   /* ブラウザ特有のスタイルを無効に */
   -moz-appearance: none;
