@@ -16,7 +16,7 @@ clsmain {
   margin: 50px 0;
 }
 
-p {
+.p-1 {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
