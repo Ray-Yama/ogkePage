@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: linear-gradient(to right,#1CB5E0,#000046);
 }
 
 .clsmain {
   align-items: center;
-  background: linear-gradient(to right,#1CB5E0,#000046);
   width: 100%;
   height: 100vh;
 }
@@ -14,12 +14,18 @@
 .head-1{
   text-align: center;
   margin: 50px 0;
+  font-size: 200px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .p-1 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
