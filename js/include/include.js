@@ -13,12 +13,11 @@ $(function () {
   //$("#footer").load(pPath + "page/include/footer.html");
 });
 
-function showClock1() {
+function showClock() {
    var nowTime = new Date();
-   var nowHour = nowTime.getHours();
-   var nowMin  = nowTime.getMinutes();
-   var nowSec  = nowTime.getSeconds();
-   var msg = nowHour + ":" + nowMin + ":" + nowSec;
-   document.getElementById("txtClock").innerHTML = msg;
+   var nowHour = nowTime.getHours().toString().padStart(2, '0');
+   var nowMin  = nowTime.getMinutes().toString().padStart(2, '0');
+   var nowSec  = nowTime.getSeconds().toString().padStart(2, '0');
+   document.getElementById("txtClock").innerHTML = nowHour + ":" + nowMin + ":" + nowSec;
 }
-setInterval('showClock1()',1000);
+setInterval('showClock()',1000);
