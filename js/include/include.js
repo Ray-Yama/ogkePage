@@ -2,7 +2,7 @@
 $(function () {
   let url = location.href;
   var filename = path.split("/").reverse()[0];
-  var pPath =='';
+  var pPath = '';
   
   if (filename != "index.html") {
     pPath = '../';
