@@ -16,7 +16,7 @@
 
 }
 
-.imagearea{
+.mainarea{
   height: auto;
   max-width: 100vw;
   text-align: center;
@@ -28,7 +28,10 @@
   margin-inline-end: 0.5em;
   background: linear-gradient(to right,#1CB5E0 0%,#000046 100%);
 }
-
-.image{
   
+
+.imagearea{
+  height: auto;
+  max-width: auto;
+  text-align: center;
 }
