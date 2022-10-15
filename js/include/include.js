@@ -24,8 +24,11 @@ function showClock() {
 setInterval('showClock()',1000);
 
 window.onload = function() {
-   // 実行したい処理
-   alert('ページの読み込みが完了したよ！');
+  // 実行したい処理
+  alert('ページの読み込みが完了したよ！');
+  setTimeout('navAdd();', 2000);
+}
+function navAdd() {
   $(".openbtn").click(function () {//ボタンがクリックされたら
 　　$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
 　　$("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
