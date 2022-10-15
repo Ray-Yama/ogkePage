@@ -22,18 +22,3 @@ function showClock() {
    document.getElementById("txtClock").innerHTML = nowHour + ":" + nowMin + ":" + nowSec;
 }
 setInterval('showClock()',1000);
-
-window.onload = function() {
-  setTimeout('navAdd();', 000);
-}
-function navAdd() {
-  $(".openbtn").click(function () {//ボタンがクリックされたら
-　　$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-　　$("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-　});
-
-　$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-　　$(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-　　$("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-　});
-}
