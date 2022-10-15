@@ -12,15 +12,6 @@ $(function () {
   //$("#side").load(pPath + "page/include/side.html");
   //$("#footer").load(pPath + "page/include/footer.html");
 
-　$(".openbtn").click(function () {//ボタンがクリックされたら
-　　$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-　　$("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-　});
-
-　$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-　　$(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-　　$("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-　});
 });
 
 function showClock() {
@@ -31,3 +22,17 @@ function showClock() {
    document.getElementById("txtClock").innerHTML = nowHour + ":" + nowMin + ":" + nowSec;
 }
 setInterval('showClock()',1000);
+
+window.onload = function() {
+   // 実行したい処理
+   alert('ページの読み込みが完了したよ！');
+  $(".openbtn").click(function () {//ボタンがクリックされたら
+　　$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+　　$("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+　});
+
+　$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+　　$(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+　　$("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+　});
+}
