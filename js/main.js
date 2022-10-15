@@ -1,9 +1,6 @@
-function header(){
-    $.ajax({
-        url: "../page/include/header.html",
-        cache: false,
-        success: function(html){
-            document.write(html);
-        }
-    });
-}
+//共通パーツ読み込み
+$(function () {
+  $("#header").load("../page/include/header.html");
+  //$("#side").load("side.html");
+  //$("#footer").load("footer.html");
+});
