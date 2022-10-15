@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+#header{
+  font-size: 18px;
+  padding: 0.1em 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000000;
+  background: #cde4ff;
+  border-top: solid 0.1em #5989cf;
+  border-bottom: solid 0.3em #5989cf;
+}
+
 button{
   /* ブラウザ特有のスタイルを無効に */
   -moz-appearance: none;
