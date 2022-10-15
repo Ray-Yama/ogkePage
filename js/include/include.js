@@ -4,10 +4,7 @@ $(function () {
   var filename = path.split("/").reverse()[0];
   var pPath =='';
   
-  if (filename == "index.html") {
-    // URLが http://hoge.com/ の場合に実行する処理 
-  }
-  else {
+  if (filename != "index.html") {
     pPath = '../';
   }
   
