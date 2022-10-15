@@ -12,25 +12,20 @@
   font-weight: bold;
   color: #000;
   text-align: center;
-  isplay: block;
-
+  display: block;
 }
 
 .mainarea{
   height: auto;
   max-width: 100vw;
   text-align: center;
-  display:flex;
-  align-items: center;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   margin-inline-start: 0.5em;
   margin-inline-end: 0.5em;
   background: linear-gradient(to right,#1CB5E0 0%,#000046 100%);
+  padding: 10px;
 }
   
 .imagearea{
-  height: auto;
-  max-width: auto;
-  text-align: center;
 }
