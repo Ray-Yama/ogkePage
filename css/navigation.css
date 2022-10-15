@@ -57,6 +57,10 @@
   letter-spacing: 0.1em;
   font-weight: bold;
 }
+#g-nav li a:hover {
+  color: #fff;
+  background-color: #333;
+}
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
