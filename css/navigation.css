@@ -1,31 +1,31 @@
 /*========= ナビゲーションのためのCSS ===============*/
 
 #g-nav{
-    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-	z-index: -1;
-	opacity: 0;/*はじめは透過0*/
-    /*ナビの位置と形状*/
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
 	top:0;
+    left: -120%;
 	width:100%;
     height: 100vh;/*ナビの高さ*/
 	background:#999;
     /*動き*/
-	transition: all 0.3s;
+	transition: all 0.6s;
 }
 
-/*アクティブクラスがついたら透過なしにして最前面へ*/
+/*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive{
-	opacity: 1;
-	z-index:999;
+    left: 0;
 }
+
 
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list{
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999; 
-    width: 100%;
+    width:100%;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -33,17 +33,12 @@
 
 /*ナビゲーション*/
 #g-nav ul {
-    display: none;
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-}
-
-#g-nav.panelactive ul {
-    display: block;
 }
 
 /*リストのレイアウト設定*/
@@ -68,7 +63,7 @@
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
 	top:10px;
-	right: 10px;
+	left: 10px;
 	cursor: pointer;
     width: 50px;
     height:50px;
