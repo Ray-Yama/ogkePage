@@ -1,11 +1,17 @@
 //共通パーツ読み込み
 $(function () {
   let url = location.href;
-  if (url == "https://ray-yama.github.io/ogkePage/") {
-    // URLが http://hoge.com/ の場合に実行する処理 
-  } 
+  var filename = path.split("/").reverse()[0];
+  var pPath =='';
   
-  $("#header").load("../page/include/header.html");
-  //$("#side").load("side.html");
-  //$("#footer").load("footer.html");
+  if (filename == "index.html") {
+    // URLが http://hoge.com/ の場合に実行する処理 
+  }
+  else {
+    pPath = '../';
+  }
+  
+  $("#header").load(pPath + "page/include/header.html");
+  //$("#side").load(pPath + "page/include/side.html");
+  //$("#footer").load(pPath + "page/include/footer.html");
 });
