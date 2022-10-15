@@ -28,6 +28,12 @@ header#header{
   float: right;
 }
 
+.headerabsorb{
+  font-size: 18px;
+  padding: 0.1em 0.5em;
+  width: 100%;
+}
+
 button{
   /* ブラウザ特有のスタイルを無効に */
   -moz-appearance: none;
