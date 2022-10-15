@@ -24,9 +24,7 @@ function showClock() {
 setInterval('showClock()',1000);
 
 window.onload = function() {
-  // 実行したい処理
-  alert('ページの読み込みが完了したよ！');
-  setTimeout('navAdd();', 2000);
+  setTimeout('navAdd();', 000);
 }
 function navAdd() {
   $(".openbtn").click(function () {//ボタンがクリックされたら
