@@ -15,14 +15,16 @@
   border-bottom: solid 0.3em #5989cf;
 }
 
-#header.txtHeader{
+.txtHeader{
   display: inline-block;
-  width:50%;
+  width:49%;
+  text-align: left;
 }
 
-#header.txtClock{
+.txtClock{
   display: inline-block;
-  width:50%;
+  width:49%;
+  text-align: right;
 }
 
 button{
