@@ -29,8 +29,7 @@ header#header{
 }
 
 .headerabsorb{
-  font-size: 18px;
-  padding: 0.1em 0.5em;
+  height: 50px;
   width: 100%;
 }
 
