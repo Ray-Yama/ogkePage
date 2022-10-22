@@ -1,5 +1,3 @@
-(()=>{
-
 window.onload = function() {
   setTimeout('navAdd();', 000);
 }
@@ -14,5 +12,3 @@ function navAdd() {
 　　$("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 　});
 }
-
-})();
