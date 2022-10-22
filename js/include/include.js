@@ -1,5 +1,3 @@
-(()=>{
-
 //共通パーツ読み込み
 $(function () {
   let path = location.href;
@@ -24,5 +22,3 @@ function showClock() {
    document.getElementById("txtClock").innerHTML = nowHour + ":" + nowMin + ":" + nowSec;
 }
 setInterval('showClock()',1000);
-
-})();
