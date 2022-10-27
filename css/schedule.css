@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*
+Base Style
+*/
+body {
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/*
+Section
+*/
+.section {
+    padding: 10px;
+    margin: 0 10px 10px;
+    /* background: linear-gradient(to right,#dadada 0%,#050580 100%); */
+    background: linear-gradient(to right,#1CB5E0 0%,#000046 100%);
+    outline: solid 0.1px #333;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.loadSchedule_LabelArea {
+    padding: 10px;
+    color: white;
+}
+
+.loadSchedule_Label {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.loadSchedule_loadButtonArea {
+    padding: 5px 20px;
+}
+
+.loadSchedule_loadButtonArea > label {
+    background: #39f;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.loadSchedule_loadButtonArea > label:hover{
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+}
+
+  /*
+  .loadSchedule_loadButtonArea > label:after {
+    content: "";
+    color: black;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: -140px;
+    top: calc(50% - 10px);
+  }
+*/
+
+.loadSchedule_loadButtonArea > label.changed:after {
+    content: "";
+}
+
+.loadSchedule_loadButtonArea > span.filename {
+    margin:  0 0 0 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.loadSchedule_submitButtonArea {
+    padding: 5px 20px;
+}
+
+.loadSchedule_submitButtonArea > button {
+    background: #39f;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.loadSchedule_submitButtonArea > button:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-out;
+}
+
+.loadSchedule_submitButtonArea > button:disabled {
+    background: grey;
+    opacity: 1.0;
+    transition: none;
+    cursor:not-allowed;
+}
